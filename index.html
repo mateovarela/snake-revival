@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake</title>
+    <link rel="icon" type="image/gif" href="snake_wga/www/img/icons/fruits_001.gif">
+    <link rel="stylesheet" href="assets/css/snake.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="nav-muxxu">
+            <button id="btn-arena" class="menu-btn" type="button" title="ARENA"></button>
+            <button id="btn-fruit" class="menu-btn" type="button" title="ENCICLOPEDIA"></button>
+            <button id="btn-history" class="menu-btn" type="button" title="HISTORIAL"></button>
+        </div>
+    </div>
+
+    <div id="main-frame">
+        <div class="frame-top"></div>
+        <div class="frame-mid">
+            <div id="game-container">
+                <div id="ruffle-host"></div>
+                <div id="history-view">
+                    <table class="history-table">
+                        <thead>
+                            <tr><th>FECHA</th><th>PUNTUACIÓN</th><th>MAZO</th><th>FRUTAS</th><th>TIEMPO</th></tr>
+                        </thead>
+                        <tbody id="history-body"></tbody>
+                    </table>
+                    <div id="history-empty" style="text-align:center; color:#555; margin-top:100px; display:none;">No hay partidas registradas aún.</div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-bot"></div>
+    </div>
+
+    <div class="footer-info">
+        <div class="status-msg">
+            SERVIDOR VIRTUAL: <strong style="color:#fff">ACTIVO</strong> | DESCUBIERTAS: <span id="fruit-count" style="color:#fff">0 / 301</span>
+        </div>
+        <div class="footer-actions">
+            <button id="btn-fullscreen" class="action-btn" type="button">PANTALLA COMPLETA</button>
+            <button id="btn-reset" class="action-btn" type="button">RESET</button>
+        </div>
+    </div>
+
+    <script src="ruffle-nightly-2026_02_14-web-selfhosted/ruffle.js"></script>
+    <script src="assets/js/snake-app.js" defer></script>
+</body>
+</html>
